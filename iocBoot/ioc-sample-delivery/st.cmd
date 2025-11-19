@@ -4,8 +4,8 @@
 #         Project: sample-delviery.tsproj
 #        PLC name: sample-delivery (sample-delivery Instance)
 # Generated using: pytmc 2.18.2
-# Project version: 80eea78
-#    Project hash: 80eea78ac81380ed236f60948b0a6e01d78377e2
+# Project version: 1cbc154
+#    Project hash: 1cbc1544d8aefcff57f367718201130169c60ecf
 #     PLC IP/host: plc-xcs-sds (Specified in Makefile; project has: 172.21.38.25)
 #      PLC Net ID: 172.21.38.25.1.1
 # ** DEVELOPMENT MODE IOC **
@@ -14,7 +14,8 @@
 #
 # Libraries:
 #
-#   lcls-twincat-sample-delivery: * (SLAC)
+#   LCLS Sample Delivery: * -> 2.0.0 (SLAC - LCLS)
+#   LCLS Vacuum: * -> 2.4.5 (SLAC - LCLS)
 #   Tc2_Standard: * (Beckhoff Automation GmbH)
 #   Tc2_System: * (Beckhoff Automation GmbH)
 #   Tc3_Module: * (Beckhoff Automation GmbH)
@@ -37,14 +38,14 @@ epicsEnvSet("ASYN_PORT",        "ASYN_PLC")
 epicsEnvSet("IPADDR",           "plc-xcs-sds")
 epicsEnvSet("AMSID",            "172.21.38.25.1.1")
 epicsEnvSet("AMS_PORT",         "851")
-epicsEnvSet("ADS_MAX_PARAMS",   "1453")
+epicsEnvSet("ADS_MAX_PARAMS",   "1783")
 epicsEnvSet("ADS_SAMPLE_MS",    "50")
 epicsEnvSet("ADS_MAX_DELAY_MS", "100")
 epicsEnvSet("ADS_TIMEOUT_MS",   "1000")
 epicsEnvSet("ADS_TIME_SOURCE",  "0")
 
 # Add a route to the PLC automatically:
-system("${ADS_IOC_TOP}/scripts/add_route.sh plc-xcs-sds ^172.*$")
+system("${ADS_IOC_TOP}/scripts/add_route.sh plc-xcs-sds ^172.*")
 
 # adsAsynPortDriverConfigure(portName, ipaddr, amsaddr, amsport,
 #    asynParamTableSize, priority, noAutoConnect, defaultSampleTimeMS,
@@ -83,10 +84,12 @@ dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample-delive
 dbLoadRecords("TwinCAT_TaskInfo.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample-delivery,IDX=2,TASK_PORT=350")
 dbLoadRecords("TwinCAT_AppInfo.db", "PORT=$(ASYN_PORT), PREFIX=PLC:sample-delivery")
 
-dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample-delivery,PROJECT=sample-delviery.tsproj,HASH=80eea78,VERSION=80eea78,PYTMC=2.18.2,PLC_HOST=plc-xcs-sds")
+dbLoadRecords("TwinCAT_Project.db", "PREFIX=PLC:sample-delivery,PROJECT=sample-delviery.tsproj,HASH=1cbc154,VERSION=1cbc154,PYTMC=2.18.2,PLC_HOST=plc-xcs-sds")
 
-#   lcls-twincat-sample-delivery: * (SLAC)
-dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample-delivery,DEPENDENCY=lcls-twincat-sample-delivery,VERSION=*,VENDOR=SLAC")
+#   LCLS Sample Delivery: * -> 2.0.0 (SLAC - LCLS)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample-delivery,DEPENDENCY=LCLS_Sample_Delivery,VERSION=2.0.0,VENDOR=SLAC - LCLS")
+#   LCLS Vacuum: * -> 2.4.5 (SLAC - LCLS)
+dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample-delivery,DEPENDENCY=LCLS_Vacuum,VERSION=2.4.5,VENDOR=SLAC - LCLS")
 #   Tc2_Standard: * (Beckhoff Automation GmbH)
 dbLoadRecords("TwinCAT_Dependency.db", "PREFIX=PLC:sample-delivery,DEPENDENCY=Tc2_Standard,VERSION=*,VENDOR=Beckhoff Automation GmbH")
 #   Tc2_System: * (Beckhoff Automation GmbH)
@@ -99,8 +102,8 @@ cd "$(IOC_TOP)"
 ## PLC Project Database files ##
 dbLoadRecords("sample-delivery.db", "PORT=$(ASYN_PORT),PREFIX=PLC:sample-delivery:,IOCNAME=$(IOC),IOC=$(IOC)")
 
-# Total records: 453
-callbackSetQueueSize(2906)
+# Total records: 783
+callbackSetQueueSize(3566)
 
 # Autosave and archive settings:
 save_restoreSet_status_prefix("PLC:sample-delivery:")
