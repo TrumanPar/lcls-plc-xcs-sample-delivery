@@ -22,6 +22,8 @@ BronkhorstC();
 BronkhorstD();
 SolenoidPairA();
 
+PRG_RCC();
+
 (* Following execution of all the programs, set the first pass false *)
 g_xFirstPass := FALSE;
 ]]></ST>

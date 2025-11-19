@@ -2,7 +2,7 @@
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.35" ClassName="CNestedPlcProjDef">
 	<DataTypes>
 		<DataType>
-			<Name GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom" AutoDeleteType="true">EL6inData22B</Name>
+			<Name GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom" AutoDeleteType="true">EL6inData22B</Name>
 			<Comment><![CDATA[ This data type is corresponding to the
    EL-6xxx data structure used in the
    TwinCAT SystemManager
@@ -27,7 +27,7 @@
 			</SubItem>
 		</DataType>
 		<DataType>
-			<Name GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom" AutoDeleteType="true">EL6outData22B</Name>
+			<Name GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom" AutoDeleteType="true">EL6outData22B</Name>
 			<Comment><![CDATA[ This data type is corresponding to the
    EL-6xxx data structure used in the
    TwinCAT SystemManager
@@ -53,141 +53,141 @@
 		</DataType>
 	</DataTypes>
 	<Project GUID="{E8E24F0C-C1D4-4F03-A71D-733C6242F5C4}" Name="sample-delivery" PrjFilePath="..\..\sample-delivery\sample-delivery.plcproj" TmcFilePath="..\..\sample-delivery\sample-delivery.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="sample-delivery\sample-delivery.tmc" TmcHash="{06B7BAA2-11D4-3E54-EFE4-4DD67115D474}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="sample-delivery\sample-delivery.tmc" TmcHash="{A2B96877-29DA-9117-2737-67F5C217AB08}">
 			<Name>sample-delivery Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
 				<Name>SerialComm Inputs</Name>
 				<Var>
 					<Name>GVL_SDS.M3SelectorA.stViciSerial.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorA.stSensSerial.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorB.stViciSerial.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorB.stSensSerial.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorC.stViciSerial.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorC.stSensSerial.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorD.stViciSerial.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorD.stSensSerial.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMA.stSerial1.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMA.stSerial2.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMB.stSerial1.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMB.stSerial2.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
-				</Var>
-				<Var>
-					<Name>GVL_SDS.PCMC.stSerial2.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMC.stSerial1.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.PCMC.stSerial2.stComIn</Name>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMD.stSerial1.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMD.stSerial2.stComIn</Name>
-					<Type GUID="{5DF516C6-FC40-1863-063A-424C4395E211}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6inData22B</Type>
+					<Type GUID="{D95A7EB5-765A-0AFA-5FF9-4D3776E1C9EE}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6inData22B</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="2" AreaNo="1">
 				<Name>SerialComm Outputs</Name>
 				<Var>
 					<Name>GVL_SDS.M3SelectorA.stViciSerial.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorA.stSensSerial.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
-				</Var>
-				<Var>
-					<Name>GVL_SDS.M3SelectorD.stViciSerial.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
-				</Var>
-				<Var>
-					<Name>GVL_SDS.M3SelectorD.stSensSerial.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
-				</Var>
-				<Var>
-					<Name>GVL_SDS.PCMB.stSerial2.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorB.stViciSerial.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorB.stSensSerial.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorC.stViciSerial.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.M3SelectorC.stSensSerial.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.M3SelectorD.stViciSerial.stComOut</Name>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.M3SelectorD.stSensSerial.stComOut</Name>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMA.stSerial1.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMA.stSerial2.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMB.stSerial1.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
+				</Var>
+				<Var>
+					<Name>GVL_SDS.PCMB.stSerial2.stComOut</Name>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMC.stSerial1.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMC.stSerial2.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMD.stSerial1.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 				<Var>
 					<Name>GVL_SDS.PCMD.stSerial2.stComOut</Name>
-					<Type GUID="{D4C342C3-D548-F003-F1A1-B17AAAA14625}" Namespace="lcls_twincat_sample_delivery.Tc2_SerialCom">EL6outData22B</Type>
+					<Type GUID="{22AE08A2-CB4D-A50B-13F2-CEED32D84990}" Namespace="LCLS_Sample_Delivery.Tc2_SerialCom">EL6outData22B</Type>
 				</Var>
 			</Vars>
 			<Vars VarGrpType="1" ContextId="1" AreaNo="16">
@@ -364,6 +364,46 @@ WC bit tells you if the sync unit is OK, which tells you if cluster is alive]]><
 					<Comment><![CDATA[ if True, do not set valves according to i_xEpics]]></Comment>
 					<Type>BOOL</Type>
 				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_01.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_02.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_03.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_04.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_05.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_06.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_07.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_08.i_xOpnLS</Name>
+					<Comment><![CDATA[IO]]></Comment>
+					<Type>BOOL</Type>
+				</Var>
 			</Vars>
 			<Vars VarGrpType="2" ContextId="1" AreaNo="17">
 				<Name>PlcTask Outputs</Name>
@@ -521,6 +561,58 @@ WC bit tells you if the sync unit is OK, which tells you if cluster is alive]]><
 				<Var>
 					<Name>GVL_SDS.SolenoidPairA.q_xDO2</Name>
 					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_01.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_02.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_03.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_04.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_05.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_06.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_07.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+				<Var>
+					<Name>GVL_RCC.RCC_VRC_08.q_xOPN_DO</Name>
+					<Type>BOOL</Type>
+				</Var>
+			</Vars>
+			<Vars VarGrpType="8" ContextId="1" AreaNo="20">
+				<Name>PlcTask Retains</Name>
+				<Var>
+					<Name>PMPS_GVL.SuccessfulPreemption</Name>
+					<Comment><![CDATA[ Any time BPTM applies a new BP request which is confirmed]]></Comment>
+					<Type>UDINT</Type>
+					<InOut>7</InOut>
+				</Var>
+				<Var>
+					<Name>PMPS_GVL.AccumulatedFF</Name>
+					<Comment><![CDATA[ Any time a FF occurs]]></Comment>
+					<Type>UDINT</Type>
+					<InOut>7</InOut>
+				</Var>
+				<Var>
+					<Name>PMPS_GVL.BP_jsonDoc</Name>
+					<Type>SJsonValue</Type>
+					<InOut>7</InOut>
 				</Var>
 			</Vars>
 			<Contexts>
@@ -760,6 +852,24 @@ WC bit tells you if the sync unit is OK, which tells you if cluster is alive]]><
 				<Link VarA="SerialComm Inputs^GVL_SDS.PCMD.stSerial2.stComIn^Status" VarB="COM TxPDO-Map Inputs Channel 2^Status" AutoLink="true"/>
 				<Link VarA="SerialComm Outputs^GVL_SDS.PCMD.stSerial1.stComOut^Ctrl" VarB="COM RxPDO-Map Outputs Channel 1^Ctrl" AutoLink="true"/>
 				<Link VarA="SerialComm Outputs^GVL_SDS.PCMD.stSerial2.stComOut^Ctrl" VarB="COM RxPDO-Map Outputs Channel 2^Ctrl" AutoLink="true"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^RCC (EP2338-0001)">
+				<Link VarA="PlcTask Inputs^GVL_RCC.RCC_VRC_01.i_xOpnLS" VarB="Channel 1^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL_RCC.RCC_VRC_02.i_xOpnLS" VarB="Channel 2^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL_RCC.RCC_VRC_03.i_xOpnLS" VarB="Channel 3^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL_RCC.RCC_VRC_04.i_xOpnLS" VarB="Channel 4^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL_RCC.RCC_VRC_05.i_xOpnLS" VarB="Channel 5^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL_RCC.RCC_VRC_06.i_xOpnLS" VarB="Channel 6^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL_RCC.RCC_VRC_07.i_xOpnLS" VarB="Channel 7^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL_RCC.RCC_VRC_08.i_xOpnLS" VarB="Channel 8^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_RCC.RCC_VRC_01.q_xOPN_DO" VarB="Channel 9^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_RCC.RCC_VRC_02.q_xOPN_DO" VarB="Channel 10^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_RCC.RCC_VRC_03.q_xOPN_DO" VarB="Channel 11^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_RCC.RCC_VRC_04.q_xOPN_DO" VarB="Channel 12^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_RCC.RCC_VRC_05.q_xOPN_DO" VarB="Channel 13^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_RCC.RCC_VRC_06.q_xOPN_DO" VarB="Channel 14^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_RCC.RCC_VRC_07.q_xOPN_DO" VarB="Channel 15^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL_RCC.RCC_VRC_08.q_xOPN_DO" VarB="Channel 16^Output" AutoLink="true" Size="1"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Solenoid Pair A Digital IO (EP2338-0001)">
 				<Link VarA="PlcTask Outputs^GVL_SDS.SolenoidPairA.q_xDO1" VarB="Channel 9^Output" AutoLink="true" Size="1"/>

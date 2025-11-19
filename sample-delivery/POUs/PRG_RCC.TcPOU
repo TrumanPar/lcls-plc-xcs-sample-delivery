@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="PRG_RCC" Id="{033f0137-049a-4143-b57d-221b60b6ccec}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_RCC
+VAR
+
+    {attribute 'pytmc' :=' pv: XCS:RCC:01'}
+    stRCC_CTL_SIM : ST_RCC;
+    fbRCC_SIM 	  : FB_RCC;
+
+    {attribute 'pytmc' :=' pv: XCS:RCC:02'}
+    stRCC_CTL_HPLC : ST_RCC;
+    fbRCC_HPLC 	  : FB_RCC;
+
+    RCC_GCP_01_dummy : ST_VG;
+    xSystemOverrideMode_RCC : BOOL := FALSE;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[// dummy gauge is used to allow for RCC withough gauge interlock
+RCC_GCP_01_dummy.xPRESS_OK := TRUE;
+stRCC_CTL_HPLC.RCC_VRC_03_OPEN_OK := TRUE;
+
+fbRCC_SIM( stRCC_VRC_01:= RCC_VRC_01.iq_stValve,
+    stRCC_VRC_02 := RCC_VRC_02.iq_stValve,
+    stRCC_VRC_03 := RCC_VRC_03.iq_stValve,
+    stRCC_VRC_04 := RCC_VRC_04.iq_stValve,
+    stRCC_GCP_01 := RCC_GCP_01_dummy,
+    stRCC_CTL := stRCC_CTL_SIM
+);
+
+
+fbRCC_HPLC( stRCC_VRC_01:= RCC_VRC_05.iq_stValve,
+    stRCC_VRC_02 := RCC_VRC_06.iq_stValve,
+    stRCC_VRC_03 := RCC_VRC_07.iq_stValve,
+    stRCC_VRC_04 := RCC_VRC_08.iq_stValve,
+    stRCC_GCP_01 := RCC_GCP_01_dummy,
+    stRCC_CTL := stRCC_CTL_HPLC
+);
+
+RCC_VRC_01(i_xExtILK_OK := stRCC_CTL_SIM.RCC_VRC_01_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+
+RCC_VRC_02(i_xExtILK_OK := stRCC_CTL_SIM.RCC_VRC_02_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+RCC_VRC_03(i_xExtILK_OK := stRCC_CTL_SIM.RCC_VRC_03_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+
+RCC_VRC_04(i_xExtILK_OK := stRCC_CTL_SIM.RCC_VRC_04_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+RCC_VRC_05(i_xExtILK_OK := stRCC_CTL_HPLC.RCC_VRC_01_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+
+RCC_VRC_06(i_xExtILK_OK := stRCC_CTL_HPLC.RCC_VRC_02_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+RCC_VRC_07(i_xExtILK_OK := stRCC_CTL_HPLC.RCC_VRC_03_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+
+RCC_VRC_08(i_xExtILK_OK := stRCC_CTL_HPLC.RCC_VRC_04_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+                 ]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

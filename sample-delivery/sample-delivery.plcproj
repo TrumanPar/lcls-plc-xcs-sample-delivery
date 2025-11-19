@@ -17,6 +17,10 @@
     <LibraryReferences>{f0c9a85b-1c53-417d-a2c8-95ee2daf1066}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GVLs\GVL_RCC.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
     <Compile Include="GVLs\GVL_SDS.TcGVL">
       <SubType>Code</SubType>
     </Compile>
@@ -24,6 +28,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\PRG_RCC.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\SerialTxRx.TcPOU">
@@ -40,9 +47,13 @@
     <Folder Include="POUs" />
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="lcls-twincat-sample-delivery">
-      <DefaultResolution>lcls-twincat-sample-delivery, * (SLAC)</DefaultResolution>
-      <Namespace>lcls_twincat_sample_delivery</Namespace>
+    <PlaceholderReference Include="LCLS Sample Delivery">
+      <DefaultResolution>LCLS Sample Delivery, * (SLAC - LCLS)</DefaultResolution>
+      <Namespace>LCLS_Sample_Delivery</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="LCLS Vacuum">
+      <DefaultResolution>LCLS Vacuum, * (SLAC - LCLS)</DefaultResolution>
+      <Namespace>LCLS_Vacuum</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -61,6 +72,14 @@
     <None Include="sample-delivery.tmc">
       <SubType>Content</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderResolution Include="LCLS Sample Delivery">
+      <Resolution>LCLS Sample Delivery, 2.0.0 (SLAC - LCLS)</Resolution>
+    </PlaceholderResolution>
+    <PlaceholderResolution Include="LCLS Vacuum">
+      <Resolution>LCLS Vacuum, 2.4.5 (SLAC - LCLS)</Resolution>
+    </PlaceholderResolution>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

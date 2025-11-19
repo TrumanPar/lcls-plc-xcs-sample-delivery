@@ -180,6 +180,12 @@
 		<Box File="Solenoid Pair A Digital IO (EP2338-0001).xti" Id="8">
 			<EtherCAT PortABoxInfo="#x01000009"/>
 		</Box>
+		<Box File="RCC A (EP1111).xti" Id="36">
+			<EtherCAT PortABoxInfo="#xffffffff"/>
+		</Box>
+		<Box File="RCC (EP2338-0001).xti" Id="66">
+			<EtherCAT PortABoxInfo="#x01000024"/>
+		</Box>
 		<EtherCAT>
 			<SyncUnit Name="[ALI (EP1111)]" HcName="ALI (EP1111)"/>
 			<SyncUnit Name="[Bronkhorst MFM A]" HcName="Bronkhorst MFM A"/>
@@ -195,6 +201,7 @@
 			<SyncUnit Name="[PCM B (EP1111)]" HcName="PCM B (EP1111)"/>
 			<SyncUnit Name="[PCM C (EP1111)]" HcName="PCM C (EP1111)"/>
 			<SyncUnit Name="[PCM D (EP1111)]" HcName="PCM D (EP1111)"/>
+			<SyncUnit Name="[RCC A (EP1111)]" HcName="RCC A (EP1111)"/>
 			<SyncUnit Name="[Solenoid Pair A (EP1111)]" HcName="Solenoid Pair A (EP1111)"/>
 		</EtherCAT>
 	</Device>

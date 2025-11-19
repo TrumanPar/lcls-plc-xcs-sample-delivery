@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL_RCC" Id="{99d92e2b-c115-4610-bfeb-9d0986a50313}">
+    <Declaration><![CDATA[VAR_GLOBAL
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:01 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 1^Input;
+                             .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 9^Output'}
+ RCC_VRC_01 : FB_VRC_NC_OPNLS;
+
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:02 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 2^Input;
+                             .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 10^Output'}
+ RCC_VRC_02 : FB_VRC_NC_OPNLS;
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:03 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 3^Input;
+                             .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 11^Output'}
+ RCC_VRC_03 : FB_VRC_NC_OPNLS;
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:04 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 4^Input;
+                             .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 12^Output'}
+ RCC_VRC_04 : FB_VRC_NC_OPNLS;
+
+// RCC PUMP
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:05 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 5^Input;
+                             .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 13^Output'}
+ RCC_VRC_05 : FB_VRC_NC_OPNLS;
+
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:06 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 6^Input;
+                             .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 14^Output'}
+ RCC_VRC_06 : FB_VRC_NC_OPNLS;
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:07 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 7^Input;
+                             .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 15^Output'}
+ RCC_VRC_07 : FB_VRC_NC_OPNLS;
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:08 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 8^Input;
+                             .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 16^Output'}
+ RCC_VRC_08 : FB_VRC_NC_OPNLS;
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
