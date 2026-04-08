@@ -11,6 +11,10 @@ VAR
     {attribute 'pytmc' :=' pv: XCS:RCC:02'}
     stRCC_CTL_HPLC : ST_RCC;
     fbRCC_HPLC 	  : FB_RCC;
+	
+	{attribute 'pytmc' :=' pv: XCS:RCC:03'}
+    stRCC_CTL_PUMPLESS : ST_RCC;
+    fbRCC_PUMPLESS	  : FB_RCC;
 
     RCC_GCP_01_dummy : ST_VG;
     xSystemOverrideMode_RCC : BOOL := FALSE;
@@ -66,7 +70,49 @@ RCC_VRC_07(i_xExtILK_OK := stRCC_CTL_HPLC.RCC_VRC_03_OPEN_OK,
 RCC_VRC_08(i_xExtILK_OK := stRCC_CTL_HPLC.RCC_VRC_04_OPEN_OK,
                 i_xOverrideMode := xSystemOverrideMode_RCC,
                  iq_stValve=> );
-                 ]]></ST>
+				 
+// Pumpless
+
+fbRCC_PUMPLESS( stRCC_VRC_01:= RCC_VRC_09.iq_stValve,
+    stRCC_VRC_02 := RCC_VRC_10.iq_stValve,
+    stRCC_VRC_03 := RCC_VRC_11.iq_stValve,
+    stRCC_VRC_04 := RCC_VRC_12.iq_stValve,
+    stRCC_GCP_01 := RCC_GCP_01_dummy,
+    stRCC_CTL := stRCC_CTL_PUMPLESS
+);
+
+RCC_VRC_09(i_xExtILK_OK := stRCC_CTL_PUMPLESS.RCC_VRC_01_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+				 
+RCC_VRC_10(i_xExtILK_OK := stRCC_CTL_PUMPLESS.RCC_VRC_02_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+
+RCC_VRC_11(i_xExtILK_OK := stRCC_CTL_PUMPLESS.RCC_VRC_03_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );
+              
+RCC_VRC_12(i_xExtILK_OK := stRCC_CTL_PUMPLESS.RCC_VRC_04_OPEN_OK,
+                i_xOverrideMode := xSystemOverrideMode_RCC,
+                 iq_stValve=> );]]></ST>
     </Implementation>
+    <LineIds Name="PRG_RCC">
+      <LineId Id="3" Count="48" />
+      <LineId Id="70" Count="1" />
+      <LineId Id="91" Count="6" />
+      <LineId Id="87" Count="0" />
+      <LineId Id="98" Count="0" />
+      <LineId Id="73" Count="1" />
+      <LineId Id="72" Count="0" />
+      <LineId Id="75" Count="0" />
+      <LineId Id="77" Count="1" />
+      <LineId Id="76" Count="0" />
+      <LineId Id="80" Count="2" />
+      <LineId Id="79" Count="0" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="84" Count="1" />
+      <LineId Id="83" Count="0" />
+    </LineIds>
   </POU>
 </TcPlcObject>

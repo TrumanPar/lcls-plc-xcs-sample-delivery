@@ -189,6 +189,7 @@ PCMB : FB_PressureControlModule;
 						  '}
 PCMC : FB_PressureControlModule;
 
+//Pumpless recirc
 {attribute 'pytmc' := 'pv: XCS:SDS:PCM:D'}
 {attribute 'TcLinkTo' := '.stPropAir1.i_iPressRB 	:= TIIB[PCM D (EP4374-0002)]^AI Inputs Channel 1^Value;
                           .stPropAir2.i_iPressRB 	:= TIIB[PCM D (EP4374-0002)]^AI Inputs Channel 2^Value;
@@ -201,6 +202,15 @@ PCMC : FB_PressureControlModule;
                           .stBaseIO.i_SyncUnitWC 	:= TIIB[PCM D (EP1111)]^WcState^WcState;
 						  '}
 PCMD : FB_PressureControlModule;
+
+{attribute 'pytmc' := 'pv: XCS:SDS:PCM:E'}
+{attribute 'TcLinkTo' := '.stPropAir1.i_iPressRB 	:= TIIB[Box 63 (EP4374-0002)]^AI Inputs Channel 1^Value;
+                          .stPropAir2.i_iPressRB 	:= TIIB[Box 63 (EP4374-0002)]^AI Inputs Channel 2^Value;
+                          .stPropAir1.q_iPressCt 	:= TIIB[Box 63 (EP4374-0002)]^AO Outputs Channel 3^Analog output;
+                          .stPropAir2.q_iPressCt 	:= TIIB[Box 63 (EP4374-0002)]^AO Outputs Channel 4^Analog output;
+                          .stBaseIO.i_SyncUnitWC 	:= TIIB[Box 28 (EP1111)]^WcState^WcState;
+						  '}
+PCME : FB_PressureControlModule;
 
 {attribute 'pytmc' := 'pv: XCS:SDS:MAN'}
 {attribute 'TcLinkTo' := '.stValve[1].qxDO := TIIB[Gas_Mani_ValveCtrl (EP2338-0001)]^Channel 9^Output;

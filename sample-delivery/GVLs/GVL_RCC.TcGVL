@@ -38,6 +38,25 @@
 {attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[RCC (EP2338-0001)]^Channel 8^Input;
                              .q_xOPN_DO	:=	TIIB[RCC (EP2338-0001)]^Channel 16^Output'}
  RCC_VRC_08 : FB_VRC_NC_OPNLS;
+ 
+ // RCC Pumpless
+ {attribute 'pytmc' :=' pv: XCS:RCC:VRC:09 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[Box 35 (EP2338-0001)]^Channel 1^Input;
+                             .q_xOPN_DO	:=	TIIB[Box 35 (EP2338-0001)]^Channel 9^Output'}
+ RCC_VRC_09 : FB_VRC_NC_OPNLS;
+
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:10 '}
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[Box 35 (EP2338-0001)]^Channel 2^Input;
+                             .q_xOPN_DO	:=	TIIB[Box 35 (EP2338-0001)]^Channel 10^Output'}
+ RCC_VRC_10 : FB_VRC_NC_OPNLS;                   
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:11 '}     
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[Box 35 (EP2338-0001)]^Channel 3^Input;
+                             .q_xOPN_DO	:=	TIIB[Box 35 (EP2338-0001)]^Channel 11^Output'}
+ RCC_VRC_11 : FB_VRC_NC_OPNLS;                   
+{attribute 'pytmc' :=' pv: XCS:RCC:VRC:12 '}     
+{attribute 'TcLinkTo' := 	'.i_xOpnLS	:=	TIIB[Box 35 (EP2338-0001)]^Channel 4^Input;
+                             .q_xOPN_DO	:=	TIIB[Box 35 (EP2338-0001)]^Channel 12^Output'}
+ RCC_VRC_12 : FB_VRC_NC_OPNLS;
 
 END_VAR]]></Declaration>
   </GVL>
