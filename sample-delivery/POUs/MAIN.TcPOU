@@ -29,11 +29,5 @@ PRG_RCC();
 g_xFirstPass := FALSE;
 ]]></ST>
     </Implementation>
-    <LineIds Name="MAIN">
-      <LineId Id="3" Count="7" />
-      <LineId Id="26" Count="0" />
-      <LineId Id="11" Count="10" />
-      <LineId Id="2" Count="0" />
-    </LineIds>
   </POU>
 </TcPlcObject>
